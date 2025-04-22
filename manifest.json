@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "FB Ads Impressions Overlay",
+  "version": "1.0",
+  "description": "Show impressions overlay on Facebook Ads Library.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.facebook.com/ads/library/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
